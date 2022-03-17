@@ -1,0 +1,20 @@
+How can I create a list of strings in Salesforce?
+
+Örnek1:
+List<String>obj = new List<String>(); //Elimizde String olarak obj listesi var.
+
+//Set
+obj.add('Yakup');//Eğer listeye bir kişiyi ekleyecekseniz "add" methodunu kullanın.
+obj.add(0,'İsmail');//Sıfırıncı index'e İsmail'i ekle ordaki sıfır index numarasına ekler 
+obj.add(1,'Hanefi');//Birinci index'e Hanefiyi ekle 
+
+//Ekran Çıktısı 
+System.debug('isimler :' +obj);
+Sırasıyla İsmail-Hanefi-Yakup
+
+//Ekran Çıktısı 
+System.debug('isimler :' +obj);
+Sırasıyla İsmail-Hanefi-Yakup
+
+//Remove
+obj.remove(1,'Hanefi');//Birinci index'e Hanefiyi siler 
