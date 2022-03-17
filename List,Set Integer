@@ -1,0 +1,10 @@
+Integer[] myList = new List<Integer>{10,20,30};
+ System.debug('Elimdeki sayılar') //10,20,30
+ 
+ //Set
+ myList.set(0,100);//Sıfırıncı indexdeki 10 u silip 100 yazar.
+  System.debug('Elimdeki sayılar') //100,20,30
+  
+  //Add
+   myList.add(0,200);//Add silmeden ekler 
+  System.debug('Elimdeki sayılar') //200,100,20,30
