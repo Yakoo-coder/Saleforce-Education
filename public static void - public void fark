@@ -1,0 +1,18 @@
+//Public static void ile Public void arasındaki fark! 
+Örnek kod ekranı :
+public static StaticExamlpe{
+   public static void method1()
+    {
+     Sytem.debug('I am static method');
+    }
+    public void method2()
+    {
+    Sytem.debug('I am static method');
+    }
+}
+
+//Ekran Çıktısı 
+StaticExamlpe.method1();//bu method public static void olduğu için direkböyle çağırabiliriz.
+
+StaticExamlpe e1= new StaticExamlpe();//Public void ise instance alınarak çağırılır.
+e1.method2()
